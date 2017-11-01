@@ -1,0 +1,3 @@
+FROM image_classifier:latest
+
+RUN bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir $HOME/images/train
